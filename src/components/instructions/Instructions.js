@@ -1,4 +1,5 @@
 import React from "react";
+// import Instructions2 from "../instructions2/Instructions2";
 
 function Instructions(props) {
   return (
@@ -24,6 +25,7 @@ function Instructions(props) {
       <p>Add, commit, and push changes to your GitHub repository</p>
       <p>In the terminal:</p>
       <pre>npm run deploy</pre>
+      {/* <Instructions2 repo={props.repo} /> */}
     </div>
   );
 }
