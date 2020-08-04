@@ -14,8 +14,11 @@ function App() {
         <pre>"homepage": "http://ElizabethS5.github.io/deploy-gh-page"</pre>
 
         <p>In package.json "scripts", add:</p>
-        <pre>"predeploy": "npm run build",</pre>
-        <pre>"deploy": "gh-pages -d build"</pre>
+        <pre>
+          "predeploy": "npm run build",
+          <br />
+          "deploy": "gh-pages -d build"
+        </pre>
 
         <h2>Deployment</h2>
         <p>Add, commit, and push changes to your GitHub repository</p>
