@@ -1,24 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Make a GitHub Page for Create-React-App</h1>
+      <main>
+        <h2>Setup</h2>
+        <p>In the terminal:</p>
+        <pre>npm install gh-pages --save-dev</pre>
+
+        <p>In package.json JSON object, add:</p>
+        <pre>"homepage": "http://ElizabethS5.github.io/deploy-gh-page"</pre>
+
+        <p>In package.json "scripts", add:</p>
+        <pre>"predeploy": "npm run build",</pre>
+        <pre>"deploy": "gh-pages -d build"</pre>
+
+        <h2>Deployment</h2>
+        <p>Add, commit, and push changes to your GitHub repository</p>
+        <p>In the terminal:</p>
+        <pre>npm run deploy</pre>
+      </main>
     </div>
   );
 }
